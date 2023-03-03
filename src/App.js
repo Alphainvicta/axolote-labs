@@ -1,14 +1,14 @@
 import './App.scss';
-import Button from './components/button/button.jsx';
-import { Button_class } from './components/button/button.jsx';
-import { Icon_class } from './components/button/button.jsx';
+import Nav_bar from './sections/nav_bar/nav_bar.jsx';
+import Main_screen from './sections/main_screen/main_screen';
+import Logos_bar from './sections/logos_bar/logos_bar';
 
 function App() {
   return (
     <div className="App">
-      <Button text='Contacto' button_select={Button_class.clear}/>
-      <Button text='Servicios' button_select={Button_class.purple}/>
-      <Button text='Cotiza aqui' button_select={Button_class.pink} icon_select={Icon_class.behance}/>
+      <Nav_bar/>
+      <Main_screen/>
+      <Logos_bar/>
     </div>
   );
 }
