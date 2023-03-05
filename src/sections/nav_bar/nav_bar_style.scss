@@ -1,0 +1,31 @@
+.nav_bar_container {
+  display: flex;
+  padding: 2rem 5rem;
+  .side_a {
+    flex-grow: 1;
+  }
+  .side_b {
+    display: flex;
+    gap: 2rem;
+
+    .button1 {
+      button {
+        padding: 2rem 5rem;
+      }
+    }
+
+    .button2 {
+      button {
+        padding: 1.6rem 5rem;
+      }
+    }
+
+    .button3 {
+      button {
+        padding: 1.6rem 5rem;
+        display: flex;
+        gap: 0.8rem;
+      }
+    }
+  }
+}
