@@ -1,6 +1,7 @@
 import React from "react";
 import { Button_base, Button_purple, Button_purple_inverted, Button_pink, Button_clear } from "./button_style";
 import { ReactComponent as Cohete } from "../../icons/COHETE.svg";
+import { ReactComponent as Flecha } from "../../icons/FLECHA.svg";
 
 export const Button_class = {
     base: 'base',
@@ -22,15 +23,17 @@ const button_type = (button_select = Button_class.base) =>
 export const Icon_class = {
     none: 'none',
     cohete: 'cohete',
+    flecha: 'flecha'
 };
 
 const icon_type = (icon_select = Icon_class.none) =>
 ({ 
     [Icon_class.none]: '',
     [Icon_class.cohete]: <Cohete/>,
+    [Icon_class.flecha]: <Flecha/>
 }[icon_select]);
 
-const Button = ({ text, button_select, icon_select }) => {
+const Button = ({ button_select, text, icon_select }) => {
     const New_button = button_type(button_select);
     return(
     <New_button>
