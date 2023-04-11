@@ -1,4 +1,5 @@
 import React from "react";
+import "./contact_style.scss";
 import { ReactComponent as Phone } from "../../icons/TELEFONO.svg";
 import { ReactComponent as Mail } from "../../icons/CORREO.svg";
 import { ReactComponent as User } from "../../icons/User.svg";

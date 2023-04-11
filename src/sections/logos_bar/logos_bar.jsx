@@ -9,7 +9,6 @@ import { ReactComponent as Excel } from "../../icons/EXCEL.svg";
 const Logos_bar = () => {
   return (
     <div className="logos_bar_container">
-      <hr />
       <div className="logos">
         <Lreact />
         <Js />
@@ -17,7 +16,6 @@ const Logos_bar = () => {
         <Firebase />
         <Excel />
       </div>
-      <hr />
     </div>
   );
 };

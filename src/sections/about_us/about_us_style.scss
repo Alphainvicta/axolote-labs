@@ -22,7 +22,9 @@
     }
   }
   .side_b {
-    align-self: flex-end;
-    height: 571px;
+    display: flex;
+    img {
+      align-self: flex-end;
+    }
   }
 }
