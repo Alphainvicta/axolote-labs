@@ -1,4 +1,5 @@
 import React from "react";
+import "./review_card_style.scss";
 
 const Review_card = ({
   review_icon,

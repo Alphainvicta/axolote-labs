@@ -1,4 +1,5 @@
 import React from "react";
+import "./services_style.scss";
 import Service_card_list from "../../components/service_card/service_card_list";
 
 const Services = () => {

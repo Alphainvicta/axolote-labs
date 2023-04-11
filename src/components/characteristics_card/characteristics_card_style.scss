@@ -2,23 +2,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   background: #ffffff;
-  border: 1px solid #d8d8d8;
-  box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
-  border-radius: 20px;
+  border: 0.1rem solid #d8d8d8;
+  box-shadow: 3.48541rem 2.9626rem 4.834rem rgba(51, 102, 255, 0.05);
+  border-radius: 2rem;
   width: 31rem;
-  height: 46.2rem;
-  padding: 0rem 3rem;
+  height: 41rem;
+  padding: 5.2rem 3rem;
   text-align: center;
 
+  svg {
+    justify-self: flex-start;
+  }
+
   h3 {
+    font-weight: 600;
     font-size: 2.8rem;
     line-height: 3.6rem;
   }
   p {
+    font-family: "Mulish";
+    font-weight: 400;
     font-size: 2rem;
     line-height: 3rem;
+    margin: 0;
   }
 }

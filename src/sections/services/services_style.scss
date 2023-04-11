@@ -1,15 +1,15 @@
-.characteristics_contaner {
+.services_cont {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  gap: 8.4rem;
   .side_a {
     h2 {
       font-weight: 700;
-      font-size: 3.8rem;
-      line-height: 4.9rem;
-      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 6.2rem;
       text-align: center;
+      margin: 0;
     }
     p {
       font-family: "Mulish";
@@ -21,6 +21,7 @@
   }
   .side_b {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 14.5rem;
   }
 }

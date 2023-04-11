@@ -1,4 +1,5 @@
 import React from "react";
+import "./reviews_style.scss";
 import Review_card_list from "../../components/review_card/review_card_list";
 
 const Reviews = () => {

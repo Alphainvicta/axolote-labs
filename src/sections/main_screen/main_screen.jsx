@@ -12,7 +12,7 @@ const Main_screen = () => {
       <div className="side_a">
         <h1 className="title_text">SOLUCIONES CON SOFTWARE A TU MEDIDA</h1>
         <p className="description_text">
-          Somos una empresa de Desarrollo de Software orientada para crear
+          Somos una empresa de Desarrollo de Software orientada a crear
           soluciones de software para empresas medianas y chicas
         </p>
         <div className="buttons">
