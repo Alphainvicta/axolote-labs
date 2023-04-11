@@ -1,4 +1,5 @@
 import React from "react";
+import "./characteristics_style.scss";
 import Characteristics_card_list from "../../components/characteristics_card/characteristics_card_list";
 
 const Characteristics = () => {

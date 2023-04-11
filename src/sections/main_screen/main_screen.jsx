@@ -1,6 +1,6 @@
 import React from "react";
+import "./main_screen_style.scss";
 import desktop_image from "../../images/Main_screen_desktop.png";
-import phone_image from "../../images/Main_screen_phone.png";
 
 import Button from "../../components/button/button";
 import { Button_class } from "../../components/button/button.jsx";
@@ -29,7 +29,6 @@ const Main_screen = () => {
       </div>
       <div className="side_b">
         <img src={desktop_image} alt="" />
-        <img src={phone_image} alt="" />
       </div>
     </div>
   );

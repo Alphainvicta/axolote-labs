@@ -1,4 +1,5 @@
 import React from "react";
+import "./about_us_style.scss";
 import image_desktop from "../../images/About_us_desktop.png";
 
 const About_us = () => {

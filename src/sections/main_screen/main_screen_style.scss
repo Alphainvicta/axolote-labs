@@ -1,0 +1,25 @@
+.main_screen_container {
+  display: flex;
+  margin: 14.5rem 5.5rem;
+  .side_a {
+    .title_text {
+      font-size: 6.7rem;
+      font-weight: 700;
+      line-height: 8.7rem;
+    }
+    .description_text {
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 3.2rem;
+    }
+    .buttons {
+      display: flex;
+      gap: 1.8rem;
+      button {
+        padding: 1.6rem 5rem;
+        display: flex;
+        gap: 0.8rem;
+      }
+    }
+  }
+}

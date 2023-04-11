@@ -12,7 +12,7 @@ class Characteristics_card_list extends React.Component {
           card_icon: <Icon1 />,
           card_title: "Totalmente Personalizado",
           card_text:
-            "No usamos plantillas ya hechas, hacemos tu software desde cero con las especificaciones personalizadas que tu nos pidas en la cotización.No usamos plantillas ya hechas, hacemos tu software desde cero con las especificaciones personalizadas que tu nos pidas en la cotización.",
+            "No usamos plantillas ya hechas, hacemos tu software desde cero con las especificaciones personalizadas que tu nos pidas en la cotización.",
           id: "card1",
         },
         {
