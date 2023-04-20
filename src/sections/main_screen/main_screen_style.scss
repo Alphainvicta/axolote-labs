@@ -24,4 +24,44 @@
       }
     }
   }
+  .side_b {
+    .tablet_image {
+      display: none;
+    }
+  }
+}
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .main_screen_container {
+    flex-direction: column;
+    margin: 0 3.5rem;
+    .side_a {
+      .title_text {
+        text-align: center;
+      }
+      .description_text {
+        font-size: 2.1rem;
+        text-align: center;
+      }
+      .buttons {
+        justify-content: center;
+        .button_2 {
+          display: none;
+        }
+      }
+    }
+    .side_b {
+      margin-top: 5rem;
+      align-self: center;
+      .desktop_image {
+        display: none;
+      }
+      .tablet_image {
+        display: contents;
+      }
+    }
+  }
 }

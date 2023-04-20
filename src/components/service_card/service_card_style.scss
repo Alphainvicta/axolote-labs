@@ -24,3 +24,30 @@
     }
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .service_card_container {
+    gap: 2rem;
+    .card_side_a {
+      align-self: center;
+      img {
+        height: 26.667rem;
+      }
+    }
+    .card_side_b {
+      h3 {
+        font-size: 3.8rem;
+        line-height: 4.9rem;
+      }
+      p {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

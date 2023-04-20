@@ -24,3 +24,16 @@
     gap: 3rem;
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .reviews_container {
+    gap: 3rem;
+    .side_b {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

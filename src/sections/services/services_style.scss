@@ -25,3 +25,21 @@
     gap: 14.5rem;
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .services_cont {
+    gap: 8rem;
+    .side_a {
+      h2 {
+        font-size: 3.3rem;
+        line-height: 4.3rem;
+      }
+    }
+    .side_b {
+      gap: 10rem;
+    }
+  }
+}

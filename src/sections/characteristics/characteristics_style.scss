@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 
   .side_a {
     h2 {
       font-weight: 700;
       font-size: 3.8rem;
       line-height: 4.9rem;
-      font-weight: 700;
       text-align: center;
+      margin: 0;
     }
     p {
       font-family: "Mulish";
@@ -22,5 +23,24 @@
   .side_b {
     display: flex;
     gap: 3rem;
+  }
+}
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .characteristics_contaner {
+    margin: 0rem 3.5rem;
+    .side_a {
+      h2 {
+        font-size: 3.3rem;
+        line-height: 4.3rem;
+      }
+    }
+    .side_b {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 }

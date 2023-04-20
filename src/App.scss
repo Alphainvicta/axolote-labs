@@ -9,5 +9,14 @@
   display: flex;
   flex-direction: column;
   gap: 14.5rem;
-  overflow-x: hidden;
+}
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .App {
+    width: 75rem;
+    gap: 10rem;
+  }
 }

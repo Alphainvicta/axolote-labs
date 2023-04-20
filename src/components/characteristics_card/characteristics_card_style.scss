@@ -29,3 +29,24 @@
     margin: 0;
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .characteristics_card_container {
+    width: auto;
+    height: 33.3rem;
+    padding: 4rem 3rem;
+    margin: 0 3.5rem;
+
+    svg {
+      justify-self: flex-start;
+    }
+
+    h3 {
+      font-size: 2.1rem;
+      line-height: 2.7rem;
+    }
+  }
+}

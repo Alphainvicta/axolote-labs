@@ -11,3 +11,17 @@
     align-items: center;
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .logos_bar_container {
+    margin: 0rem 3.5rem;
+    .logos {
+      svg {
+        height: 6rem;
+      }
+    }
+  }
+}

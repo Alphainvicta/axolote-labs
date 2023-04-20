@@ -10,11 +10,15 @@ const Review_card = ({
 }) => {
   return (
     <div className="review_card_container">
-      {review_icon}
-      <h3>{review_name}</h3>
-      <p className="review_card_description">{review_description}</p>
-      <p className="review_card_text">{review_text}</p>
-      {review_stars}
+      <div className="review_card_side_a">
+        {review_icon}
+        <h3>{review_name}</h3>
+        <p className="review_card_description">{review_description}</p>
+      </div>
+      <div className="review_card_side_b">
+        <p className="review_card_text">{review_text}</p>
+        {review_stars}
+      </div>
     </div>
   );
 };

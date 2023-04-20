@@ -18,3 +18,16 @@
     height: fit-content;
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .footer_contanier {
+    padding: 2.4rem 3rem;
+
+    .about {
+      font-size: 1.4rem;
+    }
+  }
+}

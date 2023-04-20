@@ -29,3 +29,29 @@
     }
   }
 }
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .nav_bar_container {
+    display: flex;
+    padding: 2rem 3rem;
+
+    .side_b {
+      .button1 {
+        display: none;
+      }
+
+      .button2 {
+        button {
+          padding: 1.6rem 5rem;
+        }
+      }
+
+      .button3 {
+        display: none;
+      }
+    }
+  }
+}

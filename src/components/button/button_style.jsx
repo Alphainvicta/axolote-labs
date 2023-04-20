@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Button_base = styled.button`
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   text-align: center;
 
   display: flex;

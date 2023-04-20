@@ -1,11 +1,13 @@
 .about_us_container {
   display: flex;
+  height: 57.1rem;
   margin: 0rem 5.5rem;
   background: #3c0e81;
   border-radius: 20px;
   .side_a {
     margin: 6rem;
     h2 {
+      font-weight: 700;
       font-size: 5rem;
       line-height: 6.5rem;
       color: #f2146f;
@@ -13,6 +15,7 @@
     }
     h3 {
       font-family: "Mulish";
+      font-weight: 800;
       font-size: 3.2rem;
       line-height: 4.8rem;
       color: #f2146f;
@@ -20,15 +23,63 @@
     }
     p {
       font-family: "Mulish";
+      font-weight: 400;
       font-size: 2.1rem;
       line-height: 3.2rem;
       color: #ffffff;
     }
   }
   .side_b {
-    display: flex;
-    img {
-      align-self: flex-end;
+    .image_desktop {
+      display: flex;
+      img {
+        align-self: flex-end;
+      }
+    }
+
+    .image_phone {
+      display: none;
+    }
+  }
+}
+
+//
+//Tablet display############################################################
+//
+@media only screen and (max-width: 75rem) {
+  .about_us_container {
+    height: 46.1rem;
+    margin: 0rem 3.5rem;
+    .side_a {
+      margin: 4rem 3rem;
+      h2 {
+        font-size: 3.8rem;
+        line-height: 4.9rem;
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      p {
+        font-weight: 200;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+    .side_b {
+      display: flex;
+      .image_desktop {
+        display: none;
+      }
+
+      .image_phone {
+        display: flex;
+        align-self: flex-end;
+        img {
+          align-self: flex-end;
+        }
+      }
     }
   }
 }

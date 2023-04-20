@@ -1,6 +1,7 @@
 import React from "react";
 import "./about_us_style.scss";
 import image_desktop from "../../images/About_us_desktop.png";
+import image_phone from "../../images/About_us_phone.png";
 
 const About_us = () => {
   return (
@@ -19,7 +20,12 @@ const About_us = () => {
         </p>
       </div>
       <div className="side_b">
-        <img src={image_desktop} alt="" />
+        <div className="image_desktop">
+          <img src={image_desktop} alt="" />
+        </div>
+        <div className="image_phone">
+          <img src={image_phone} alt="" />
+        </div>
       </div>
     </div>
   );
