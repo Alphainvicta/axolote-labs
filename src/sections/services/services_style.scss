@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8.4rem;
+  margin: 0 4.5rem;
   .side_a {
     h2 {
       font-weight: 700;
@@ -31,6 +32,7 @@
 //
 @media only screen and (max-width: 75rem) {
   .services_cont {
+    margin: 0 3.5rem;
     gap: 8rem;
     .side_a {
       h2 {
@@ -40,6 +42,24 @@
     }
     .side_b {
       gap: 10rem;
+    }
+  }
+}
+
+//
+//Phone display############################################################
+//
+@media only screen and (max-width: 37.5rem) {
+  .services_cont {
+    margin: 0 3rem;
+    .side_a {
+      h2 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+      }
+    }
+    .side_b {
+      gap: 8rem;
     }
   }
 }

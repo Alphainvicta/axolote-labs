@@ -44,6 +44,7 @@
       }
       .description_text {
         font-size: 2.1rem;
+        line-height: 3.2rem;
         text-align: center;
       }
       .buttons {
@@ -62,6 +63,33 @@
       .tablet_image {
         display: contents;
       }
+    }
+  }
+}
+
+//
+//Phone display############################################################
+//
+@media only screen and (max-width: 37.5rem) {
+  .main_screen_container {
+    margin: 0 3rem;
+    .side_a {
+      .title_text {
+        font-size: 3.8rem;
+        line-height: 4.9rem;
+      }
+      .description_text {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      .buttons {
+        .button_2 {
+          display: none;
+        }
+      }
+    }
+    .side_b {
+      margin-top: 4rem;
     }
   }
 }

@@ -36,7 +36,9 @@
         align-self: flex-end;
       }
     }
-
+    .image_tablet {
+      display: none;
+    }
     .image_phone {
       display: none;
     }
@@ -70,6 +72,47 @@
     .side_b {
       display: flex;
       .image_desktop {
+        display: none;
+      }
+      .image_tablet {
+        display: flex;
+        align-self: flex-end;
+        img {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+//
+//Phone display############################################################
+//
+@media only screen and (max-width: 37.5rem) {
+  .about_us_container {
+    flex-direction: column-reverse;
+    height: 71.8rem;
+    margin: 0rem 3rem;
+    background: linear-gradient(101.21deg, #3c0e81 34.58%, #f8f9ff 113.14%);
+    .side_a {
+      text-align: center;
+      h2 {
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+      }
+      h3 {
+        font-weight: 400;
+      }
+      p {
+        font-weight: 200;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+    }
+    .side_b {
+      display: flex;
+      .image_tablet {
         display: none;
       }
 

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 6rem;
+  margin: 0 5.5rem;
 
   .side_a {
     h2 {
@@ -30,10 +31,24 @@
 //
 @media only screen and (max-width: 75rem) {
   .reviews_container {
+    margin: 0 3.5rem;
     gap: 3rem;
     .side_b {
       flex-direction: column;
       gap: 2rem;
+    }
+  }
+}
+
+//
+//Phone display############################################################
+//
+@media only screen and (max-width: 37.5rem) {
+  .reviews_container {
+    margin: 0 3rem;
+    .side_b {
+      flex-direction: column;
+      gap: 3rem;
     }
   }
 }

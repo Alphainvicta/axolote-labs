@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   background: #3c0e81;
-
   .about {
     flex-grow: 1;
     color: #f2146f;
@@ -29,5 +28,17 @@
     .about {
       font-size: 1.4rem;
     }
+  }
+}
+
+//
+//Phone display############################################################
+//
+@media only screen and (max-width: 37.5rem) {
+  .footer_contanier {
+    flex-flow: wrap column-reverse;
+    align-items: flex-start;
+    padding: 2.4rem 2rem;
+    gap: 2rem;
   }
 }
