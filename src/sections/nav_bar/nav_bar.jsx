@@ -14,17 +14,23 @@ const Nav_bar = () => {
       </div>
       <div className="side_b">
         <div className="button1">
-          <Button text="Contacto" button_select={Button_class.clear} />
+          <a href="#contact">
+            <Button text="Contacto" button_select={Button_class.clear} />
+          </a>
         </div>
         <div className="button2">
-          <Button text="SERVICIOS" button_select={Button_class.purple} />
+          <a href="#services">
+            <Button text="SERVICIOS" button_select={Button_class.purple} />
+          </a>
         </div>
         <div className="button3">
-          <Button
-            text="COTIZA AQUÍ"
-            button_select={Button_class.pink}
-            icon_select={Icon_class.cohete}
-          />
+          <a href="#contact">
+            <Button
+              text="COTIZA AQUÍ"
+              button_select={Button_class.pink}
+              icon_select={Icon_class.cohete}
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -12,11 +12,13 @@ const Service_card = ({ card_image, card_title, card_text, card_button }) => {
       <div className="card_side_b">
         <h3>{card_title}</h3>
         <p>{card_text}</p>
-        <Button
-          text="COTIZA TU SOLUCIÓN"
-          button_select={card_button}
-          icon_select={Icon_class.flecha}
-        />
+        <a href="#contact">
+          <Button
+            text="COTIZA TU SOLUCIÓN"
+            button_select={card_button}
+            icon_select={Icon_class.flecha}
+          />
+        </a>
       </div>
     </div>
   );

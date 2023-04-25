@@ -18,17 +18,21 @@ const Main_screen = () => {
         </p>
         <div className="buttons">
           <div className="button_1">
-            <Button
-              text="COTIZA TU SOLUCIÓN"
-              button_select={Button_class.pink}
-              icon_select={Icon_class.cohete}
-            />
+            <a href="#contact">
+              <Button
+                text="COTIZA TU SOLUCIÓN"
+                button_select={Button_class.pink}
+                icon_select={Icon_class.cohete}
+              />
+            </a>
           </div>
           <div className="button_2">
-            <Button
-              text="NUESTROS SERVICIOS"
-              button_select={Button_class.purple_inverted}
-            />
+            <a href="#services">
+              <Button
+                text="NUESTROS SERVICIOS"
+                button_select={Button_class.purple_inverted}
+              />
+            </a>
           </div>
         </div>
       </div>

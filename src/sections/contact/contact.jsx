@@ -12,7 +12,7 @@ import Input from "../../components/input/input";
 
 const Contact = () => {
   return (
-    <div className="contact_container">
+    <div id="contact" className="contact_container">
       <div className="side_a">
         <h2>¡Ponte en contacto!</h2>
         <p>
