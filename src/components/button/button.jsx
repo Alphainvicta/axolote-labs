@@ -39,10 +39,10 @@ const icon_type = (icon_select = Icon_class.none) =>
     [Icon_class.flecha]: <Flecha />,
   }[icon_select]);
 
-const Button = ({ button_select, text, icon_select }) => {
+const Button = ({ button_select, text, icon_select, event }) => {
   const New_button = button_type(button_select);
   return (
-    <New_button>
+    <New_button onClick={event}>
       {icon_type(icon_select)}
       {text}
     </New_button>

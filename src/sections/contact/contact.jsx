@@ -11,6 +11,10 @@ import { Button_class } from "../../components/button/button.jsx";
 import Input from "../../components/input/input";
 
 const Contact = () => {
+  function handleClick() {
+    console.log("El botón ha sido clickeado");
+  }
+
   return (
     <div id="contact" className="contact_container">
       <div className="side_a">
@@ -40,7 +44,12 @@ const Contact = () => {
           input_text="Email"
         />
         <textarea placeholder="Mensaje" />
-        <Button text="Enviar" button_select={Button_class.pink} />
+        <Button
+          text="Enviar"
+          button_select={Button_class.pink}
+          event={handleClick}
+        />
+        <button onClick={handleClick}>Haz clic aquí</button>
       </div>
     </div>
   );
