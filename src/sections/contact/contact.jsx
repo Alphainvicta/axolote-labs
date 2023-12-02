@@ -13,7 +13,7 @@ const Contact = () => {
   const [emailData, setEmailData] = useState("");
   const [messageData, setMessageData] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = {
@@ -25,7 +25,28 @@ const Contact = () => {
     const jsonData = JSON.stringify(formData, null, 2);
     // Save jsonData to a file or use it as needed
     console.log(jsonData);
-    fetch("http://192.168.1.99:80/api/", { method: "POST", body: jsonData });
+
+    try {
+      const response = await fetch("http://192.168.1.99:80/api/", {
+        method: "POST",
+        body: jsonData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        // Handle non-successful responses
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      // Handle successful response
+      const responseData = await response.json();
+      console.log("Response data:", responseData);
+    } catch (error) {
+      // Handle network errors or errors during the fetch operation
+      console.error("Error:", error.message);
+    }
   };
 
   return (
