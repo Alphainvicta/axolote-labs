@@ -1,6 +1,6 @@
 import React from "react";
 import "./reviews_style.scss";
-import Review_card_list from "../../components/review_card/review_card_list";
+import ReviewCardList from "../../components/review_card/review_card_list";
 
 const Reviews = () => {
   return (
@@ -13,7 +13,7 @@ const Reviews = () => {
         </p>
       </div>
       <div className="side_b">
-        <Review_card_list />
+        <ReviewCardList />
       </div>
     </div>
   );

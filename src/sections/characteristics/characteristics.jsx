@@ -1,6 +1,6 @@
 import React from "react";
 import "./characteristics_style.scss";
-import Characteristics_card_list from "../../components/characteristics_card/characteristics_card_list";
+import CharacteristicsCardList from "../../components/characteristics_card/characteristics_card_list";
 
 const Characteristics = () => {
   return (
@@ -13,7 +13,7 @@ const Characteristics = () => {
         </p>
       </div>
       <div className="side_b">
-        <Characteristics_card_list />
+        <CharacteristicsCardList />
       </div>
     </div>
   );

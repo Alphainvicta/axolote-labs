@@ -1,6 +1,6 @@
 import React from "react";
 import "./services_style.scss";
-import Service_card_list from "../../components/service_card/service_card_list";
+import ServiceCardList from "../../components/service_card/service_card_list";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
         <p>Ofrecemos el siguiente catalogo de soluciones</p>
       </div>
       <div className="side_b">
-        <Service_card_list />
+        <ServiceCardList />
       </div>
     </div>
   );

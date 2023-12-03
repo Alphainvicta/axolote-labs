@@ -10,10 +10,10 @@ const Footer = () => {
         <p>© 2023 Axolotl Labs - Landing Page</p>
       </div>
       <div className="social">
-        <a>
+        <a href="">
           <Facebook />
         </a>
-        <a>
+        <a href="">
           <Linkedin />
         </a>
       </div>
