@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "./serviceCard";
+import ServiceCard from "./service_card";
 import { Button_class } from "../../components/button/button.jsx";
 import image1 from "../../images/Service_card_excel.png";
 import image2 from "../../images/Service_card_react.png";
