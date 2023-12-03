@@ -30,7 +30,7 @@ const Contact = () => {
     const jsonData = JSON.stringify(formData, null, 2);
 
     try {
-      const response = await fetch("http://192.168.1.99:8080/apiPOL/", {
+      const response = await fetch("https://axolote-emailserver.onrender.com/apiPOL/", {
         method: "POST",
         body: jsonData,
         headers: {
