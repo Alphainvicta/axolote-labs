@@ -1,9 +1,9 @@
 import React from "react";
-import Characteristics_card from "./characteristics_card";
+import CharacteristicsCard from "./characteristics_card";
 import { ReactComponent as Icon1 } from "../../icons/Icon_characteristics_card1.svg";
 import { ReactComponent as Icon2 } from "../../icons/Icon_characteristics_card2.svg";
 
-class Characteristics_card_list extends React.Component {
+class CharacteristicsCardList extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -28,9 +28,9 @@ class Characteristics_card_list extends React.Component {
 
   render() {
     return this.state.cards.map(({ id, ...cardsprops }) => (
-      <Characteristics_card key={id} {...cardsprops} />
+      <CharacteristicsCard key={id} {...cardsprops} />
     ));
   }
 }
 
-export default Characteristics_card_list;
+export default CharacteristicsCardList;

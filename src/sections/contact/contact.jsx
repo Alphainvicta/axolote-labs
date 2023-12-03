@@ -3,7 +3,7 @@ import "./contact_style.scss";
 import { ReactComponent as Phone } from "../../icons/TELEFONO.svg";
 import { ReactComponent as Mail } from "../../icons/CORREO.svg";
 import { ReactComponent as User } from "../../icons/User.svg";
-import { ReactComponent as Purple_mail } from "../../icons/Correo_morado.svg";
+import { ReactComponent as PurpleMail } from "../../icons/Correo_morado.svg";
 import Button from "../../components/button/button";
 import { Button_class } from "../../components/button/button.jsx";
 import Input from "../../components/input/input";
@@ -30,13 +30,16 @@ const Contact = () => {
     const jsonData = JSON.stringify(formData, null, 2);
 
     try {
-      const response = await fetch("https://axolote-emailserver.onrender.com/apiPOL/", {
-        method: "POST",
-        body: jsonData,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://axolote-emailserver.onrender.com/apiPOL/",
+        {
+          method: "POST",
+          body: jsonData,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -85,7 +88,7 @@ const Contact = () => {
         />
         <Input
           input_type="email"
-          input_icon={<Purple_mail />}
+          input_icon={<PurpleMail />}
           input_text="Email"
           onChange={(e) => setEmailData(e.target.value)}
         />

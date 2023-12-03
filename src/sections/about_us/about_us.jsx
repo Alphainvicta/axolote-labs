@@ -4,7 +4,7 @@ import image_desktop from "../../images/About_us_desktop.png";
 import image_tablet from "../../images/About_us_tablet.png";
 import image_phone from "../../images/About_us_phone.png";
 
-const About_us = () => {
+const AboutUs = () => {
   return (
     <div className="about_us_container">
       <div className="side_a">
@@ -35,4 +35,4 @@ const About_us = () => {
   );
 };
 
-export default About_us;
+export default AboutUs;

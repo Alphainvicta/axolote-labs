@@ -1,11 +1,11 @@
 import "./App.scss";
-import NavBar from "./sections/NavBar/NavBar.jsx";
+import NavBar from "./sections/nav_bar/nav_bar.jsx";
 import MainScreen from "./sections/main_screen/main_screen.jsx";
-import Logos_bar from "./sections/logos_bar/logos_bar";
+import LogosBar from "./sections/logos_bar/logos_bar";
 import Characteristics from "./sections/characteristics/characteristics";
 import Services from "./sections/services/services";
 import Reviews from "./sections/reviews/reviews";
-import About_us from "./sections/about_us/about_us";
+import AboutUs from "./sections/about_us/about_us";
 import Contact from "./sections/contact/contact";
 import Footer from "./sections/footer/footer";
 
@@ -14,11 +14,11 @@ function App() {
     <div className="App">
       <NavBar />
       <MainScreen />
-      <Logos_bar />
+      <LogosBar />
       <Characteristics />
       <Services />
       <Reviews />
-      <About_us />
+      <AboutUs />
       <Contact />
       <Footer />
     </div>

@@ -42,10 +42,10 @@ const icon_type = (icon_select = Icon_class.none) =>
 const Button = ({ button_select, text, icon_select, event }) => {
   const New_button = button_type(button_select);
   return (
-    <New_button onClick={event}>
+    <NewButton onClick={event}>
       {icon_type(icon_select)}
       {text}
-    </New_button>
+    </NewButton>
   );
 };
 

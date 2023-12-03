@@ -3,7 +3,7 @@ import "./service_card_style.scss";
 import Button from "../button/button";
 import { Icon_class } from "../button/button";
 
-const Service_card = ({ card_image, card_title, card_text, card_button }) => {
+const ServiceCard = ({ card_image, card_title, card_text, card_button }) => {
   return (
     <div className="service_card_container">
       <div className="card_side_a">
@@ -24,4 +24,4 @@ const Service_card = ({ card_image, card_title, card_text, card_button }) => {
   );
 };
 
-export default Service_card;
+export default ServiceCard;

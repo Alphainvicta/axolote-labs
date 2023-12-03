@@ -7,7 +7,7 @@ import { ReactComponent as Node } from "../../icons/NODE.svg";
 import { ReactComponent as Firebase } from "../../icons/FIREBASE.svg";
 import { ReactComponent as Excel } from "../../icons/EXCEL.svg";
 
-const Logos_bar = () => {
+const LogosBar = () => {
   return (
     <div className="logos_bar_container">
       <div className="logos">
@@ -22,4 +22,4 @@ const Logos_bar = () => {
   );
 };
 
-export default Logos_bar;
+export default LogosBar;

@@ -1,11 +1,11 @@
 import React from "react";
-import Service_card from "./service_card";
+import ServiceCard from "./serviceCard";
 import { Button_class } from "../../components/button/button.jsx";
 import image1 from "../../images/Service_card_excel.png";
 import image2 from "../../images/Service_card_react.png";
 import image3 from "../../images/Service_card_postgreesql.png";
 
-class Service_card_list extends React.Component {
+class ServiceCardList extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -40,9 +40,9 @@ class Service_card_list extends React.Component {
 
   render() {
     return this.state.cards.map(({ id, ...cardsprops }) => (
-      <Service_card key={id} {...cardsprops} />
+      <ServiceCard key={id} {...cardsprops} />
     ));
   }
 }
 
-export default Service_card_list;
+export default ServiceCardList;

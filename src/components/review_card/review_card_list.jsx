@@ -1,16 +1,16 @@
 import React from "react";
-import Review_card from "./review_card";
-import { ReactComponent as Review_image1 } from "../../icons/Review.svg";
+import ReviewCard from "./review_card";
+import { ReactComponent as ReviewImage1 } from "../../icons/Review.svg";
 import { ReactComponent as Star5 } from "../../icons/5ESTRELLAS.svg";
 import { ReactComponent as Star4 } from "../../icons/4ESTRELLAS.svg";
 
-class Review_card_list extends React.Component {
+class ReviewCardList extends React.Component {
   constructor() {
     super();
     this.state = {
       cards: [
         {
-          review_icon: <Review_image1 />,
+          review_icon: <ReviewImage1 />,
           review_name: "Global FHAS Seguridad Privada",
           review_description: "Director General",
           review_text:
@@ -19,7 +19,7 @@ class Review_card_list extends React.Component {
           id: "card1",
         },
         {
-          review_icon: <Review_image1 />,
+          review_icon: <ReviewImage1 />,
           review_name: "Diego Arturo López de la Peña",
           review_description: "Contador",
           review_text:
@@ -28,7 +28,7 @@ class Review_card_list extends React.Component {
           id: "card2",
         },
         {
-          review_icon: <Review_image1 />,
+          review_icon: <ReviewImage1 />,
           review_name: "Silvia Leticia Gonzalez Venegas",
           review_description: "Jefa de Laboratorio de Microbiología",
           review_text:
@@ -42,9 +42,9 @@ class Review_card_list extends React.Component {
 
   render() {
     return this.state.cards.map(({ id, ...cardsprops }) => (
-      <Review_card key={id} {...cardsprops} />
+      <ReviewCard key={id} {...cardsprops} />
     ));
   }
 }
 
-export default Review_card_list;
+export default ReviewCardList;

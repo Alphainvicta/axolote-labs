@@ -1,7 +1,7 @@
 import React from "react";
 import "./review_card_style.scss";
 
-const Review_card = ({
+const ReviewCard = ({
   review_icon,
   review_name,
   review_description,
@@ -23,4 +23,4 @@ const Review_card = ({
   );
 };
 
-export default Review_card;
+export default ReviewCard;
