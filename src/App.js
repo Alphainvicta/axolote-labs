@@ -1,6 +1,6 @@
 import "./App.scss";
-import Nav_bar from "./sections/nav_bar/NavBar.jsx";
-import Main_screen from "./sections/main_screen/main_screen";
+import NavBar from "./sections/NavBar/NavBar.jsx";
+import Main_screen from "./sections/main_screen/MainScreen.jsx";
 import Logos_bar from "./sections/logos_bar/logos_bar";
 import Characteristics from "./sections/characteristics/characteristics";
 import Services from "./sections/services/services";
@@ -12,7 +12,7 @@ import Footer from "./sections/footer/footer";
 function App() {
   return (
     <div className="App">
-      <Nav_bar />
+      <NavBar />
       <Main_screen />
       <Logos_bar />
       <Characteristics />

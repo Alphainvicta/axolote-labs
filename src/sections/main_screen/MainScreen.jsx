@@ -3,7 +3,7 @@ import "./main_screen_style.scss";
 import desktop_image from "../../images/Main_screen_desktop.png";
 import tablet_image from "../../images/Main_screen_phone.png";
 
-import Button from "../../components/button/button";
+import Button from "../../components/button/button.jsx";
 import { Button_class } from "../../components/button/button.jsx";
 import { Icon_class } from "../../components/button/button.jsx";
 

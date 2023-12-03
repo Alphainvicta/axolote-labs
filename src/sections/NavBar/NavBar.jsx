@@ -6,7 +6,7 @@ import Button from "../../components/button/button.jsx";
 import { Button_class } from "../../components/button/button.jsx";
 import { Icon_class } from "../../components/button/button.jsx";
 
-const Nav_bar = () => {
+const NavBar = () => {
   return (
     <div className="nav_bar_container">
       <div className="side_a">
@@ -37,4 +37,4 @@ const Nav_bar = () => {
   );
 };
 
-export default Nav_bar;
+export default NavBar;
