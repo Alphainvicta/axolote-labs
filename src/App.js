@@ -1,6 +1,6 @@
 import "./App.scss";
 import NavBar from "./sections/NavBar/NavBar.jsx";
-import MainScreen from "./sections/main_screen/MainScreen.jsx";
+import MainScreen from "./sections/main_screen/main_screen.jsx";
 import Logos_bar from "./sections/logos_bar/logos_bar";
 import Characteristics from "./sections/characteristics/characteristics";
 import Services from "./sections/services/services";
