@@ -2,7 +2,7 @@ import React from "react";
 import "./nav_bar_style.scss";
 import { ReactComponent as Logo } from "../../icons/LOGO.svg";
 
-import Button from "../../components/button/button";
+import Button from "../../components/button/button.jsx";
 import { Button_class } from "../../components/button/button.jsx";
 import { Icon_class } from "../../components/button/button.jsx";
 
