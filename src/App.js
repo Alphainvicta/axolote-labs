@@ -1,5 +1,5 @@
 import "./App.scss";
-import Nav_bar from "./sections/nav_bar/nav_bar.jsx";
+import Nav_bar from "./sections/nav_bar/NavBar.jsx";
 import Main_screen from "./sections/main_screen/main_screen";
 import Logos_bar from "./sections/logos_bar/logos_bar";
 import Characteristics from "./sections/characteristics/characteristics";
