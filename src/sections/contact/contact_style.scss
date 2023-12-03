@@ -8,6 +8,34 @@
   border-radius: 2rem;
   padding: 6rem;
 
+  &.submitted {
+    .side_a {
+      display: none;
+    }
+    .side_b {
+      display: none;
+    }
+  }
+
+  &.success {
+    border: solid green;
+    .side_submit {
+      h2 {
+        color: green;
+      }
+    }
+  }
+
+  &.error {
+    border: solid red;
+
+    .side_submit {
+      h2 {
+        color: red;
+      }
+    }
+  }
+
   .side_a {
     h2 {
       font-weight: 700;
@@ -56,6 +84,15 @@
       padding: 1.6rem 5rem;
       gap: 0.8rem;
       width: 15.1rem;
+    }
+  }
+
+  .side_submit {
+    h2 {
+      font-weight: 700;
+      font-size: 3.8rem;
+      line-height: 4.9rem;
+      margin: 0;
     }
   }
 }

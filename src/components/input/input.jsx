@@ -10,6 +10,7 @@ const Input = ({ input_type, input_icon, input_text, onChange }) => {
         name={input_type}
         placeholder={input_text}
         onChange={onChange}
+        required={true}
       />
     </div>
   );
