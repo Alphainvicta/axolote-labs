@@ -7,7 +7,7 @@ import Button from "../../components/button/button.jsx";
 import { Button_class } from "../../components/button/button.jsx";
 import { Icon_class } from "../../components/button/button.jsx";
 
-const Main_screen = () => {
+const MainScreen = () => {
   return (
     <div className="main_screen_container">
       <div className="side_a">
@@ -48,4 +48,4 @@ const Main_screen = () => {
   );
 };
 
-export default Main_screen;
+export default MainScreen;
