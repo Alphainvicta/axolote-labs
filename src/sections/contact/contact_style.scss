@@ -9,6 +9,7 @@
   padding: 6rem;
 
   &.submitted {
+    justify-content: center;
     .side_a {
       display: none;
     }
@@ -93,6 +94,7 @@
       font-size: 3.8rem;
       line-height: 4.9rem;
       margin: 0;
+      
     }
   }
 }
