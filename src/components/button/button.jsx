@@ -40,7 +40,7 @@ const icon_type = (icon_select = Icon_class.none) =>
   }[icon_select]);
 
 const Button = ({ button_select, text, icon_select, event }) => {
-  const New_button = button_type(button_select);
+  const NewButton = button_type(button_select);
   return (
     <NewButton onClick={event}>
       {icon_type(icon_select)}
