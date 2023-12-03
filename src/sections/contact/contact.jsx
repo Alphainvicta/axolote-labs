@@ -98,11 +98,9 @@ const Contact = () => {
           placeholder="Mensaje"
           required={true}
         />
-        <Button
-          text="Enviar"
-          button_select={Button_class.pink}
-          disabled={isFormButtonSubmitted}
-        />
+        {!isFormButtonSubmitted && (
+          <Button text="Enviar" button_select={Button_class.pink} />
+        )}
       </form>
       {isFormSubmitted && (
         <div className="side_submit">
