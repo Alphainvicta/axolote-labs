@@ -12,8 +12,13 @@ const Contact = () => {
   const [nameData, setNameData] = useState("");
   const [emailData, setEmailData] = useState("");
   const [messageData, setMessageData] = useState("");
+  const [isFormButtonSubmitted, setIsFormButtonSubmitted] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const handleSubmit = async (e) => {
+    setIsFormButtonSubmitted(true);
     e.preventDefault();
 
     const formData = {
@@ -21,13 +26,11 @@ const Contact = () => {
       emailData,
       messageData,
     };
-    // Convert form data to JSON
+
     const jsonData = JSON.stringify(formData, null, 2);
-    // Save jsonData to a file or use it as needed
-    console.log(jsonData);
 
     try {
-      const response = await fetch("http://192.168.1.99:80/api/", {
+      const response = await fetch("http://192.168.1.99:8080/apiPOL/", {
         method: "POST",
         body: jsonData,
         headers: {
@@ -36,21 +39,28 @@ const Contact = () => {
       });
 
       if (!response.ok) {
-        // Handle non-successful responses
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
-      // Handle successful response
       const responseData = await response.json();
+      setIsSuccess(true);
+      setIsError(false);
       console.log("Response data:", responseData);
     } catch (error) {
-      // Handle network errors or errors during the fetch operation
       console.error("Error:", error.message);
+      setIsSuccess(false);
+      setIsError(true);
     }
+    setIsFormSubmitted(true);
   };
 
   return (
-    <div id="contact" className="contact_container">
+    <div
+      id="contact"
+      className={`contact_container ${isFormSubmitted ? "submitted" : ""} ${
+        isSuccess ? "success" : ""
+      } ${isError ? "error" : ""}`}
+    >
       <div className="side_a">
         <h2>¡Ponte en contacto!</h2>
         <p>
@@ -66,7 +76,7 @@ const Contact = () => {
           <p>AxolotLabsContacto@gmail.com</p>
         </div>
       </div>
-      <form className="side_b" onSubmit={handleSubmit}>
+      <form className="side_b" id="contact_form" onSubmit={handleSubmit}>
         <Input
           input_type="text"
           input_icon={<User />}
@@ -83,9 +93,23 @@ const Contact = () => {
           name="Message"
           onChange={(e) => setMessageData(e.target.value)}
           placeholder="Mensaje"
+          required={true}
         />
-        <Button text="Enviar" button_select={Button_class.pink} />
+        <Button
+          text="Enviar"
+          button_select={Button_class.pink}
+          disabled={isFormButtonSubmitted}
+        />
       </form>
+      {isFormSubmitted && (
+        <div className="side_submit">
+          <h2>{`${
+            isSuccess
+              ? "El correo se envió exitosamente"
+              : "Hubó un error al enviar el correo"
+          }`}</h2>
+        </div>
+      )}
     </div>
   );
 };
