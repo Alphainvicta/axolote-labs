@@ -22,103 +22,106 @@ i18n
           nav: {
             button1: "Contact",
             button2: "SERVICES",
-            button3: "",
+            button3: "QUOTE HERE",
           },
           mainScreen: {
             sidea: {
-              title: "",
-              description: "",
-              button1: "",
-              button2: "",
+              title: "SOFTWARE SOLUTIONS FULLY CUSTOMIZED",
+              description:
+                "We are aimed at creating software solutions for you",
+              button1: "QUOTE YOUR SOLUTION",
+              button2: "OUR SERVICES",
             },
           },
           characteristics: {
             sidea: {
-              title: "",
-              text: "",
+              title: "FEATURES IN OUR SOFTWARE",
+              text: "All software we develop includes the following features",
             },
             sideb: {
               card1: {
-                title: "",
-                text: "",
+                title: "Fully Customized",
+                text: "No templates, we will develop your idea from scratch with the specifications that you ask",
               },
               card2: {
-                title: "",
-                text: "",
+                title: "Responsive Design",
+                text: "Don't worry about the screen size. Our UI will adapt to your needs, from desktop computers to mobile phones",
               },
             },
           },
           services: {
             sidea: {
-              title: "",
-              text: "",
+              title: "OUR SERVICES",
+              text: "We offer the following solutions",
             },
             sideb: {
               card1: {
-                title: "",
-                text: "",
+                title: "EXCEL with Macros",
+                text: "Any type of Excel template, with the use of macros, formulas and custom formatting. Whether for accounting, financial, human resources, inventory, payroll, automated calculations, whatever you can think of!",
               },
               card2: {
-                title: "",
-                text: "",
+                title: "Web and Mobile Apps",
+                text: "Any type of Website and/or Mobile Application, with a responsive, personalized design oriented to your needs. Creating your solution from scratch, without using predefined generic templates.",
               },
               card3: {
-                title: "",
-                text: "",
+                title: "Databases with User Interface",
+                text: "Any type of Database including the user interface to manipulate and use your Base. Databases for inventory, employees, stores, receipts, etc.",
               },
-              button: "",
+              button: "QUOTE HERE",
             },
           },
           reviews: {
             sidea: {
-              title: "",
-              text: "",
+              title: "Reviews from Our Clients",
+              text: "See the impact that our solutions generate",
             },
             sideb: {
               card1: {
-                name: "",
-                description: "",
-                text: "",
+                name: "Global FHAS Private Security",
+                description: "Managing Director",
+                text: "Excellent final product, we really liked the database they made of our active and retired staff and the company website, thank you.",
               },
               card2: {
-                name: "",
-                description: "",
-                text: "",
+                name: "Arturo Lopez",
+                description: "Accountant",
+                text: "I am very happy with the Excel templates they created, now I can calculate my staff's payroll in less than 5 minutes and the utility of my company in a simple way, recommended.",
               },
               card3: {
-                name: "",
-                description: "",
-                text: "",
+                name: "Silvia Venegas",
+                description: "Head of Microbiology Laboratory",
+                text: "I loved it, now thanks to this app I can record the arrival and departure times of my employees, thank you, very professional.",
               },
             },
           },
           about: {
             sidea: {
-              title: "",
-              subtitle1: "",
-              text1: "",
-              subtitle2: "",
-              text2: "",
+              title: "AXOLOTL LABS",
+              subtitle1: "Mision",
+              text1:
+                "Create the best software product with the best possible solution to make our customers' lives easier",
+              subtitle2: "Vision",
+              text2:
+                "To be a provider of technology and business solutions of the highest quality on the market",
             },
           },
           contact: {
             sidea: {
-              title: "",
-              text: "",
+              title: "Get in touch!",
+              text: "Our team is here to help. <br/> Contact us for fast and friendly support.",
             },
             sideb: {
-              input1: "",
-              input2: "",
-              textarea: "",
-              button: "",
+              input1: "Name",
+              input2: "Email",
+              textarea: "Message",
+              button: "Send",
             },
             submit: {
-              success: "",
-              failure: "",
+              success: "The email was sent successfully",
+              failure: "There was an error sending the email",
             },
           },
           footer: {
-            about: "",
+            about: "© 2023 Axolotl Labs - Landing Page",
           },
         },
       },
@@ -134,7 +137,7 @@ i18n
             sidea: {
               title: "SOLUCIONES CON SOFTWARE A TU MEDIDA",
               description:
-                "Somos una empresa de Desarrollo de Software orientada a crear soluciones de software para empresas medianas y chicas",
+                "Somos una empresa de Desarrollo de Software orientada a crear soluciones de software para empresas",
               button1: "COTIZA TU SOLUCIÓN",
               button2: "NUESTROS SERVICIOS",
             },
@@ -147,11 +150,11 @@ i18n
             sideb: {
               card1: {
                 title: "Totalmente Personalizado",
-                text: "No usamos plantillas ya hechas, hacemos tu software desde cero con las especificaciones personalizadas que tu nos pidas en la cotización.",
+                text: "No usamos plantillas ya hechas, hacemos tu software desde cero con las especificaciones personalizadas que tu nos pidas en la cotización",
               },
               card2: {
                 title: "Diseño Responsivo",
-                text: "No hay necesidad de preocuparse por el tamaño de la pantalla. Nuestra interfaz de usuario se adapta a cualquier tamaño de pantalla, desde computadoras de escritorio hasta el celular móvil.",
+                text: "No hay necesidad de preocuparse por el tamaño de la pantalla. Nuestra interfaz de usuario se adapta a cualquier espacio, desde computadoras de escritorio hasta el celular móvil",
               },
             },
           },
