@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CharacteristicsCard from "./characteristics_card";
 import { ReactComponent as Icon1 } from "../../icons/Icon_characteristics_card1.svg";
 import { ReactComponent as Icon2 } from "../../icons/Icon_characteristics_card2.svg";
@@ -6,14 +6,7 @@ import { ReactComponent as Icon2 } from "../../icons/Icon_characteristics_card2.
 import { useTranslation } from "react-i18next";
 
 const CharacteristicsCardList = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
 
   const cards = [
     {

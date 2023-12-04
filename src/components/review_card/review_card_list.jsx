@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReviewCard from "./review_card";
 import { ReactComponent as ReviewImage1 } from "../../icons/Review.svg";
 import { ReactComponent as Star5 } from "../../icons/5ESTRELLAS.svg";
@@ -7,14 +7,7 @@ import { ReactComponent as Star4 } from "../../icons/4ESTRELLAS.svg";
 import { useTranslation } from "react-i18next";
 
 const ReviewCardList = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
 
   const cards = [
     {

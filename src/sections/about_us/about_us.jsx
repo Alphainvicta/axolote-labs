@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./about_us_style.scss";
 import image_desktop from "../../images/About_us_desktop.png";
 import image_tablet from "../../images/About_us_tablet.png";
@@ -7,14 +7,7 @@ import image_phone from "../../images/About_us_phone.png";
 import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
   return (
     <div className="about_us_container">
       <div className="side_a">

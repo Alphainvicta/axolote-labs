@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./contact_style.scss";
 import { ReactComponent as Phone } from "../../icons/TELEFONO.svg";
 import { ReactComponent as Mail } from "../../icons/CORREO.svg";
@@ -11,14 +11,7 @@ import Input from "../../components/input/input";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
 
   const [nameData, setNameData] = useState("");
   const [emailData, setEmailData] = useState("");

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ServiceCard from "./service_card";
 import { Button_class } from "../../components/button/button.jsx";
 import image1 from "../../images/Service_card_excel.png";
@@ -8,14 +8,7 @@ import image3 from "../../images/Service_card_postgreesql.png";
 import { useTranslation } from "react-i18next";
 
 const ServiceCardList = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
 
   const cards = [
     {

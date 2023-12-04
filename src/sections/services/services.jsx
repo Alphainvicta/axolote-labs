@@ -1,18 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./services_style.scss";
 import ServiceCardList from "../../components/service_card/service_card_list";
 
 import { useTranslation } from "react-i18next";
 
 const Services = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
   return (
     <div id="services" className="services_cont">
       <div className="side_a">

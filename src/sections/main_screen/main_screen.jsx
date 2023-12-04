@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./main_screen_style.scss";
 import desktop_image from "../../images/Main_screen_desktop.png";
 import tablet_image from "../../images/Main_screen_phone.png";
@@ -10,14 +10,7 @@ import { Icon_class } from "../../components/button/button.jsx";
 import { useTranslation } from "react-i18next";
 
 const MainScreen = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
   return (
     <div className="main_screen_container">
       <div className="side_a">

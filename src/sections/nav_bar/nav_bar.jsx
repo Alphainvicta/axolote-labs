@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./nav_bar_style.scss";
 import { ReactComponent as Logo } from "../../icons/LOGO.svg";
 
@@ -8,12 +8,7 @@ import { Button_class, Icon_class } from "../../components/button/button.jsx";
 import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, [i18n]);
+  const { t } = useTranslation();
 
   return (
     <div className="nav_bar_container">

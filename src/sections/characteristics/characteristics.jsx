@@ -1,18 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./characteristics_style.scss";
 import CharacteristicsCardList from "../../components/characteristics_card/characteristics_card_list";
 
 import { useTranslation } from "react-i18next";
 
 const Characteristics = () => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
 
   return (
     <div className="characteristics_contaner">
