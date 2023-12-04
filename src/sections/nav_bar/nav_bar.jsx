@@ -13,9 +13,8 @@ const NavBar = () => {
   useEffect(() => {
     const lng = navigator.language;
     i18n.changeLanguage(lng);
-  }, []);
+  }, [i18n]);
 
-  const lng = navigator.language;
   return (
     <div className="nav_bar_container">
       <div className="side_a">
