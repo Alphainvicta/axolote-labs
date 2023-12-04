@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./service_card_style.scss";
 import Button from "../button/button";
 import { Icon_class } from "../button/button";
@@ -6,14 +6,7 @@ import { Icon_class } from "../button/button";
 import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ card_image, card_title, card_text, card_button }) => {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    const lng = navigator.language;
-    i18n.changeLanguage(lng);
-  }, []);
-
-  const lng = navigator.language;
+  const { t } = useTranslation();
   return (
     <div className="service_card_container">
       <div className="card_side_a">
