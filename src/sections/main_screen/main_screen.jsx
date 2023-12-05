@@ -7,20 +7,20 @@ import Button from "../../components/button/button.jsx";
 import { Button_class } from "../../components/button/button.jsx";
 import { Icon_class } from "../../components/button/button.jsx";
 
+import { useTranslation } from "react-i18next";
+
 const MainScreen = () => {
+  const { t } = useTranslation();
   return (
     <div className="main_screen_container">
       <div className="side_a">
-        <h1 className="title_text">SOLUCIONES CON SOFTWARE A TU MEDIDA</h1>
-        <p className="description_text">
-          Somos una empresa de Desarrollo de Software orientada a crear
-          soluciones de software para empresas medianas y chicas
-        </p>
+        <h1 className="title_text">{t("mainScreen.sidea.title")}</h1>
+        <p className="description_text">{t("mainScreen.sidea.description")}</p>
         <div className="buttons">
           <div className="button_1">
             <a href="#contact">
               <Button
-                text="COTIZA TU SOLUCIÓN"
+                text={t("mainScreen.sidea.button1")}
                 button_select={Button_class.pink}
                 icon_select={Icon_class.cohete}
               />
@@ -29,7 +29,7 @@ const MainScreen = () => {
           <div className="button_2">
             <a href="#services">
               <Button
-                text="NUESTROS SERVICIOS"
+                text={t("mainScreen.sidea.button2")}
                 button_select={Button_class.purple_inverted}
               />
             </a>

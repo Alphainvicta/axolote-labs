@@ -8,7 +8,11 @@ import Button from "../../components/button/button";
 import { Button_class } from "../../components/button/button.jsx";
 import Input from "../../components/input/input";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [nameData, setNameData] = useState("");
   const [emailData, setEmailData] = useState("");
   const [messageData, setMessageData] = useState("");
@@ -65,51 +69,49 @@ const Contact = () => {
       } ${isError ? "error" : ""}`}
     >
       <div className="side_a">
-        <h2>¡Ponte en contacto!</h2>
-        <p>
-          Nuestro equipo esta aqui para ayudar. <br />
-          Contáctanos para un soporte rápido y amigable.
-        </p>
+        <h2>{t("contact.sidea.title")}</h2>
+        <p dangerouslySetInnerHTML={{ __html: t("contact.sidea.text") }} />
         <div className="phone">
           <Phone />
           <p>+52 3314838300</p>
         </div>
         <div className="mail">
           <Mail />
-          <p>AxolotLabsContacto@gmail.com</p>
+          <p>axolotelabs@gmail.com</p>
         </div>
       </div>
       <form className="side_b" id="contact_form" onSubmit={handleSubmit}>
         <Input
           input_type="text"
           input_icon={<User />}
-          input_text="Nombre completo"
+          input_text={t("contact.sideb.input1")}
           onChange={(e) => setNameData(e.target.value)}
         />
         <Input
           input_type="email"
           input_icon={<PurpleMail />}
-          input_text="Email"
+          input_text={t("contact.sideb.input2")}
           onChange={(e) => setEmailData(e.target.value)}
         />
         <textarea
           name="Message"
           onChange={(e) => setMessageData(e.target.value)}
-          placeholder="Mensaje"
+          placeholder={t("contact.sideb.textarea")}
           required={true}
         />
-        <Button
-          text="Enviar"
-          button_select={Button_class.pink}
-          disabled={isFormButtonSubmitted}
-        />
+        {!isFormButtonSubmitted && (
+          <Button
+            text={t("contact.sideb.button")}
+            button_select={Button_class.pink}
+          />
+        )}
       </form>
       {isFormSubmitted && (
         <div className="side_submit">
           <h2>{`${
             isSuccess
-              ? "El correo se envió exitosamente"
-              : "Hubó un error al enviar el correo"
+              ? t("contact.submit.success")
+              : t("contact.submit.failure")
           }`}</h2>
         </div>
       )}
