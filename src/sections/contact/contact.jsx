@@ -14,7 +14,6 @@ const Contact = () => {
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isError, setIsError] = useState(false);
 
   const handleFormSubmit = (e) => {
     setIsFormSubmitted(true);
@@ -28,7 +27,7 @@ const Contact = () => {
       id="contact"
       className={`contact_container ${isFormSubmitted ? "submitted" : ""} ${
         isSuccess ? "success" : ""
-      } ${isError ? "error" : ""}`}
+      }`}
     >
       <div className="side_a">
         <h2>{t("contact.sidea.title")}</h2>
