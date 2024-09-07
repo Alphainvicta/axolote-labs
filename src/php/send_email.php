@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!empty($name) && !empty($email) && !empty($message) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Prepare email
         $to = "axolotelabs@gmail.com"; // Replace with your email address
-        $subject = "New Contact Form Submission";
+        $subject = "Forma de cotizacion de: $email";
         $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
         $headers = "From: $email";
 

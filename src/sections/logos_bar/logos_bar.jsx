@@ -6,6 +6,8 @@ import { ReactComponent as Postgre } from "../../icons/POSTGRE.svg";
 import { ReactComponent as Php } from "../../icons/php-logo.svg";
 import { ReactComponent as Python } from "../../icons/python.svg";
 import { ReactComponent as Excel } from "../../icons/EXCEL.svg";
+import { ReactComponent as Unity } from "../../icons/unity.svg";
+import { ReactComponent as Unreal } from "../../icons/unreal.svg";
 
 const LogosBar = () => {
   return (
@@ -17,6 +19,8 @@ const LogosBar = () => {
         <Postgre />
         <Python />
         <Excel />
+        <Unity />
+        <Unreal />
       </div>
     </div>
   );
