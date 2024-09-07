@@ -14,20 +14,22 @@ const Contact = () => {
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const handleFormSubmit = (e) => {
     setIsFormSubmitted(true);
     setTimeout(() => {
       setIsSuccess(true); // Assuming form submission is successful
     }, 1000);
+    isSuccess ? setIsError(false) : setIsError(true);
   };
 
   return (
     <div
       id="contact"
       className={`contact_container ${isFormSubmitted ? "submitted" : ""} ${
-        isSuccess ? "success" : "error"
-      }`}
+        isSuccess ? "success" : ""
+      } ${isError ? "error" : ""}`}
     >
       <div className="side_a">
         <h2>{t("contact.sidea.title")}</h2>
