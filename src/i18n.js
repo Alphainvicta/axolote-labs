@@ -67,6 +67,10 @@ i18n
                 title: "Databases with User Interface",
                 text: "Any type of Database including the user interface to manipulate and use your Base. Databases for inventory, employees, stores, receipts, etc.",
               },
+              card4: {
+                title: "Interactive software",
+                text: "Any type of interface that your event needs like a video game with your brand, registry or rating software, even a virtual reality experience!",
+              },
               button: "QUOTE HERE",
             },
           },
@@ -175,6 +179,10 @@ i18n
               card3: {
                 title: "Bases de Datos con Interfaz de Usuario",
                 text: "Cualquier tipo de Base de Datos incluyendote la interfaz de usuario para manipular y hacer uso de tu Base. Bases de Datos para inventario de articulos, personal, sucursales, ticket de venta de articulos, etc. ",
+              },
+              card4: {
+                title: "Software interactivo",
+                text: "Cualquier tipo de interfaz que tu evento necesite como un videojuego con tu marca, un software de registro o para valoración, ¡Incluso una experiencia de realidad virtual!",
               },
               button: "COTIZA TU SOLUCIÓN",
             },

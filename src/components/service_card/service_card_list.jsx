@@ -4,6 +4,7 @@ import { Button_class } from "../../components/button/button.jsx";
 import image1 from "../../images/Service_card_excel.png";
 import image2 from "../../images/Service_card_react.png";
 import image3 from "../../images/Service_card_postgreesql.png";
+import image4 from "../../images/Service_card_interactive.png";
 
 import { useTranslation } from "react-i18next";
 
@@ -31,6 +32,13 @@ const ServiceCardList = () => {
       card_text: t("services.sideb.card3.text"),
       card_button: Button_class.pink,
       id: "card3",
+    },
+    {
+      card_image: image4,
+      card_title: t("services.sideb.card4.title"),
+      card_text: t("services.sideb.card4.text"),
+      card_button: Button_class.purple,
+      id: "card4",
     },
   ];
 
