@@ -26,7 +26,7 @@ const Contact = () => {
     <div
       id="contact"
       className={`contact_container ${isFormSubmitted ? "submitted" : ""} ${
-        isSuccess ? "success" : ""
+        isSuccess ? "success" : "error"
       }`}
     >
       <div className="side_a">
