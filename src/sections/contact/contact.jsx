@@ -7,58 +7,20 @@ import { ReactComponent as PurpleMail } from "../../icons/Correo_morado.svg";
 import Button from "../../components/button/button";
 import { Button_class } from "../../components/button/button.jsx";
 import Input from "../../components/input/input";
-
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation();
 
-  const [nameData, setNameData] = useState("");
-  const [emailData, setEmailData] = useState("");
-  const [messageData, setMessageData] = useState("");
-  const [isFormButtonSubmitted, setIsFormButtonSubmitted] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  const handleSubmit = async (e) => {
-    setIsFormButtonSubmitted(true);
-    e.preventDefault();
-
-    const formData = {
-      nameData,
-      emailData,
-      messageData,
-    };
-
-    const jsonData = JSON.stringify(formData, null, 2);
-
-    try {
-      const response = await fetch(
-        "https://axolote-emailserver.onrender.com/apiPOL/",
-        {
-          method: "POST",
-          body: jsonData,
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
-      const responseData = await response.json();
-      setIsSuccess(true);
-      setIsError(false);
-      console.log("Response data:", responseData);
-    } catch (error) {
-      console.error("Error:", error.message);
-      setIsSuccess(false);
-      setIsError(true);
-    }
+  const handleFormSubmit = (e) => {
     setIsFormSubmitted(true);
+    setTimeout(() => {
+      setIsSuccess(true); // Assuming form submission is successful
+    }, 1000);
   };
 
   return (
@@ -80,31 +42,34 @@ const Contact = () => {
           <p>axolotelabs@gmail.com</p>
         </div>
       </div>
-      <form className="side_b" id="contact_form" onSubmit={handleSubmit}>
+      <form
+        className="side_b"
+        id="contact_form"
+        method="POST"
+        action="php/send_email.php" // The PHP file to handle form submission
+        onSubmit={handleFormSubmit}
+      >
         <Input
           input_type="text"
           input_icon={<User />}
           input_text={t("contact.sideb.input1")}
-          onChange={(e) => setNameData(e.target.value)}
+          name="nameData" // Add name attribute to be sent via POST
         />
         <Input
           input_type="email"
           input_icon={<PurpleMail />}
           input_text={t("contact.sideb.input2")}
-          onChange={(e) => setEmailData(e.target.value)}
+          name="emailData" // Add name attribute
         />
         <textarea
-          name="Message"
-          onChange={(e) => setMessageData(e.target.value)}
+          name="messageData"
           placeholder={t("contact.sideb.textarea")}
           required={true}
         />
-        {!isFormButtonSubmitted && (
-          <Button
-            text={t("contact.sideb.button")}
-            button_select={Button_class.pink}
-          />
-        )}
+        <Button
+          text={t("contact.sideb.button")}
+          button_select={Button_class.pink}
+        />
       </form>
       {isFormSubmitted && (
         <div className="side_submit">
