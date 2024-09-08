@@ -173,7 +173,7 @@ i18n
                 text: "Cualquier tipo de Página Web y/o Aplicación Móvil, con diseño responsivo, personalizado y orientado a tus necesidades. Creando tu solución desde cero, sin hacer uso de plantillas genéricas ya predefinidas.",
               },
               card2: {
-                title: "Software interactivo",
+                title: "Software Interactivo",
                 text: "Cualquier tipo de interfaz que tu evento necesite como un videojuego con tu marca, un software de registro o para valoración, ¡Incluso una experiencia de realidad virtual!",
               },
               card3: {
