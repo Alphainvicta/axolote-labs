@@ -1,10 +1,10 @@
 import React from "react";
 import ServiceCard from "./service_card";
 import { Button_class } from "../../components/button/button.jsx";
-import image1 from "../../images/Service_card_excel.png";
-import image2 from "../../images/Service_card_react.png";
+import image1 from "../../images/Service_card_react.png";
+import image2 from "../../images/Service_card_interactive.png";
 import image3 from "../../images/Service_card_postgreesql.png";
-import image4 from "../../images/Service_card_interactive.png";
+import image4 from "../../images/Service_card_excel.png";
 
 import { useTranslation } from "react-i18next";
 
