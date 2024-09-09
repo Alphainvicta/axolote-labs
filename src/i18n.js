@@ -125,7 +125,7 @@ i18n
             },
           },
           footer: {
-            about: "© 2023 Axolotl Labs - Landing Page",
+            about: "© 2024 Axolotl Labs - Landing Page",
           },
         },
       },
@@ -238,7 +238,7 @@ i18n
             },
           },
           footer: {
-            about: "© 2023 Axolotl Labs - Landing Page",
+            about: "© 2024 Axolotl Labs - Landing Page",
           },
         },
       },
