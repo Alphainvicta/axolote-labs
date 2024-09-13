@@ -5,12 +5,18 @@ import { Icon_class } from "../button/button";
 
 import { useTranslation } from "react-i18next";
 
-const ServiceCard = ({ card_image, card_title, card_text, card_button }) => {
+const ServiceCard = ({
+  card_image,
+  image_alt,
+  card_title,
+  card_text,
+  card_button,
+}) => {
   const { t } = useTranslation();
   return (
     <div className="service_card_container">
       <div className="card_side_a">
-        <img src={card_image} alt="" />
+        <img src={card_image} alt={image_alt} />
       </div>
       <div className="card_side_b">
         <h3>{card_title}</h3>

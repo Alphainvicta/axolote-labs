@@ -14,6 +14,7 @@ const ServiceCardList = () => {
   const cards = [
     {
       card_image: image1,
+      image_alt: "AxoloteLabs Web and mobile services",
       card_title: t("services.sideb.card1.title"),
       card_text: t("services.sideb.card1.text"),
       card_button: Button_class.pink,
@@ -21,6 +22,7 @@ const ServiceCardList = () => {
     },
     {
       card_image: image2,
+      image_alt: "AxoloteLabs Interactive software",
       card_title: t("services.sideb.card2.title"),
       card_text: t("services.sideb.card2.text"),
       card_button: Button_class.purple,
@@ -28,6 +30,7 @@ const ServiceCardList = () => {
     },
     {
       card_image: image3,
+      image_alt: "AxoloteLabs Databases",
       card_title: t("services.sideb.card3.title"),
       card_text: t("services.sideb.card3.text"),
       card_button: Button_class.pink,
@@ -35,6 +38,7 @@ const ServiceCardList = () => {
     },
     {
       card_image: image4,
+      image_alt: "AxoloteLabs Excel macros",
       card_title: t("services.sideb.card4.title"),
       card_text: t("services.sideb.card4.text"),
       card_button: Button_class.purple,

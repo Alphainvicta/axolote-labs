@@ -38,10 +38,10 @@ const MainScreen = () => {
       </div>
       <div className="side_b">
         <div className="desktop_image">
-          <img src={desktop_image} alt="" />
+          <img src={desktop_image} alt="AxoloteLabs Web" />
         </div>
         <div className="tablet_image">
-          <img src={tablet_image} alt="" />
+          <img src={tablet_image} alt="AxoloteLabs Mobile" />
         </div>
       </div>
     </div>

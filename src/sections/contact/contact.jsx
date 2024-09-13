@@ -15,13 +15,45 @@ const Contact = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [formData, setFormData] = useState({
+    nameData: "",
+    emailData: "",
+    messageData: "",
+  });
 
-  const handleFormSubmit = (e) => {
+  // Update form data on input change
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submission with API call
+  const handleFormSubmit = async (e) => {
+    e.preventDefault(); // Prevent the default form submit behavior
     setIsFormSubmitted(true);
-    setTimeout(() => {
-      setIsSuccess(true); // Assuming form submission is successful
-    }, 1000);
-    isSuccess ? setIsError(false) : setIsError(true);
+
+    try {
+      const response = await fetch("https://api.axolotelabs.com/email.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(formData).toString(), // Format data as URL-encoded
+      });
+
+      if (response.status === 200) {
+        setIsSuccess(true); // Set success state if the response is successful
+        setIsError(false);
+      } else {
+        setIsError(true); // Set error state if response is not 200
+        setIsSuccess(false);
+      }
+    } catch (error) {
+      setIsError(true); // Set error state if an exception occurs
+      setIsSuccess(false);
+    }
   };
 
   return (
@@ -36,49 +68,51 @@ const Contact = () => {
         <p dangerouslySetInnerHTML={{ __html: t("contact.sidea.text") }} />
         <div className="phone">
           <Phone />
-          <p>+52 3314838300</p>
+          <p>+52 3319128876</p>
         </div>
         <div className="mail">
           <Mail />
-          <p>axolotelabs@gmail.com</p>
+          <p>cotizaciones@axolotelabs.com</p>
         </div>
       </div>
-      <form
-        className="side_b"
-        id="contact_form"
-        method="POST"
-        action="php/send_email.php" // The PHP file to handle form submission
-        onSubmit={handleFormSubmit}
-      >
+
+      <form className="side_b" id="contact_form" onSubmit={handleFormSubmit}>
         <Input
           input_type="text"
           input_icon={<User />}
           input_text={t("contact.sideb.input1")}
-          name="nameData" // Add name attribute to be sent via POST
+          name="nameData"
+          value={formData.nameData}
+          onChange={handleInputChange}
         />
         <Input
           input_type="email"
           input_icon={<PurpleMail />}
           input_text={t("contact.sideb.input2")}
-          name="emailData" // Add name attribute
+          name="emailData"
+          value={formData.emailData}
+          onChange={handleInputChange}
         />
         <textarea
           name="messageData"
           placeholder={t("contact.sideb.textarea")}
           required={true}
+          value={formData.messageData}
+          onChange={handleInputChange}
         />
         <Button
           text={t("contact.sideb.button")}
           button_select={Button_class.pink}
         />
       </form>
-      {isFormSubmitted && (
+
+      {(isError || isSuccess) && isFormSubmitted && (
         <div className="side_submit">
-          <h2>{`${
-            isSuccess
+          <h2>
+            {isSuccess
               ? t("contact.submit.success")
-              : t("contact.submit.failure")
-          }`}</h2>
+              : t("contact.submit.failure")}
+          </h2>
         </div>
       )}
     </div>

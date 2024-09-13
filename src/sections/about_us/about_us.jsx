@@ -19,13 +19,13 @@ const AboutUs = () => {
       </div>
       <div className="side_b">
         <div className="image_desktop">
-          <img src={image_desktop} alt="" />
+          <img src={image_desktop} alt="AxoloteLabs About Desktop" />
         </div>
         <div className="image_tablet">
-          <img src={image_tablet} alt="" />
+          <img src={image_tablet} alt="AxoloteLabs About Tablet" />
         </div>
         <div className="image_phone">
-          <img src={image_phone} alt="" />
+          <img src={image_phone} alt="AxoloteLabs About Mobile" />
         </div>
       </div>
     </div>

@@ -14,10 +14,10 @@ const Footer = () => {
         <p>{t("footer.about")}</p>
       </div>
       <div className="social">
-        <a href="facebook.com">
+        <a href="https://www.facebook.com/Axolotl.Labs.Ventas" target="blank">
           <Facebook />
         </a>
-        <a href="linkedin.com">
+        <a href="https://www.linkedin.com/company/axolotelabs" target="blank">
           <Linkedin />
         </a>
       </div>
