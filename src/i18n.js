@@ -57,15 +57,15 @@ i18n
             sideb: {
               card1: {
                 title: "Web and Mobile Apps",
-                text: "Any type of Website and/or Mobile Application, with a responsive, personalized design oriented to your needs. Creating your solution from scratch, without using predefined generic templates.",
+                text: "Have your own page to advertise your business, sell products with an online store or your menu/catalog quick and easy with a QR code",
               },
               card2: {
                 title: "Interactive Software",
-                text: "Any type of interface that your event needs like a video game with your brand, registry or rating software, even a virtual reality experience!",
+                text: "Virtual tours, whether with a computer and phone or full immersion with VR headsets, games for exhibitions or events, virtual reality or augmented reality software",
               },
               card3: {
                 title: "Databases with User Interface",
-                text: "Any type of Database including the user interface to manipulate and use your Base. Databases for inventory, employees, stores, receipts, etc.",
+                text: "Databases to keep your business organized, whether it's to manage inventory, staff, record appointments, meetings, schedules, departures or arrivals. Keep control and record of everything that happens in your business!",
               },
               card4: {
                 title: "EXCEL with Macros",
@@ -170,18 +170,18 @@ i18n
             sideb: {
               card1: {
                 title: "Páginas Web y Aplicaciones Móviles",
-                text: "Cualquier tipo de Página Web y/o Aplicación Móvil, con diseño responsivo, personalizado y orientado a tus necesidades. Creando tu solución desde cero, sin hacer uso de plantillas genéricas ya predefinidas.",
+                text: "Ten tu propia página para anunciar tu negocio, vender productos con una tienda en línea o tu menú/catalogo fácil y accesible con un código QR",
               },
               card2: {
                 title: "Software Interactivo",
-                text: "Cualquier tipo de interfaz que tu evento necesite como un videojuego con tu marca, un software de registro o para valoración, ¡Incluso una experiencia de realidad virtual!",
+                text: "Recorridos virtuales ya sea con computadora y teléfono o una inmersión completa con cascos de VR, juegos para exposiciones o eventos, softwares de realidad virtual o realidad aumentada",
               },
               card3: {
-                title: "Bases de Datos con Interfaz de Usuario",
-                text: "Cualquier tipo de Base de Datos incluyendote la interfaz de usuario para manipular y hacer uso de tu Base. Bases de Datos para inventario de articulos, personal, sucursales, ticket de venta de articulos, etc. ",
+                title: "Bases de Datos",
+                text: "Bases de Datos para mantener un orden dentro de tu negocio. ya sea para manejar inventario, personal, registrar citas, reuniones, horarios, salidas o entradas. ¡Ten el control y registro de todo lo que pasa en tu negocio!",
               },
               card4: {
-                title: "Soluciones en EXCEL con uso de Macros",
+                title: "Soluciones en EXCEL",
                 text: "Cualquier tipo de plantilla de Excel, con uso de macros, formulas y formato personalizado. Ya sea para fines contables, financieros, de recursos humanos, de inventario, de nóminas, de cálculos automatizados, de lo que a tí se te ocurra!",
               },
               button: "COTIZA TU SOLUCIÓN",

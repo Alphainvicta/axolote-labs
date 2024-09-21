@@ -89,12 +89,11 @@
 //
 //Phone display############################################################
 //
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 43rem) {
   .about_us_container {
     flex-direction: column-reverse;
     height: 71.8rem;
     margin: 0rem 3rem;
-    background: linear-gradient(101.21deg, #3c0e81 34.58%, #f8f9ff 113.14%);
     .side_a {
       text-align: center;
       h2 {

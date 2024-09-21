@@ -21,6 +21,7 @@ const Footer = () => {
           <Linkedin />
         </a>
       </div>
+      <div className="footer_background" />
     </div>
   );
 };

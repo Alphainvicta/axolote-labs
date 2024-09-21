@@ -107,13 +107,18 @@
     gap: 6rem;
     margin: 0rem 3.5rem;
     padding: 4rem;
+    .side_b {
+      button {
+        align-self: center;
+      }
+    }
   }
 }
 
 //
 //Phone display############################################################
 //
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 43rem) {
   .contact_container {
     margin: 0rem 3rem;
     .side_a {
@@ -127,6 +132,9 @@
     .side_b {
       input {
         font-size: 1.6rem;
+      }
+      button {
+        width: 100%;
       }
     }
   }

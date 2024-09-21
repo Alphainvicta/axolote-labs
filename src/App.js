@@ -24,7 +24,6 @@ function App() {
       <NavBar />
       <MainScreen />
       <LogosBar />
-      <Characteristics />
       <Services />
       <Reviews />
       <AboutUs />
