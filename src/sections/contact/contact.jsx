@@ -21,7 +21,6 @@ const Contact = () => {
     messageData: "",
   });
 
-  // Update form data on input change
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -29,29 +28,31 @@ const Contact = () => {
     });
   };
 
-  // Handle form submission with API call
   const handleFormSubmit = async (e) => {
-    e.preventDefault(); // Prevent the default form submit behavior
+    e.preventDefault();
     setIsFormSubmitted(true);
 
     try {
-      const response = await fetch("https://api.axolotelabs.com/email.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(formData).toString(), // Format data as URL-encoded
-      });
+      const response = await fetch(
+        "https://api.axolotelabs.com/axolote_labs/email.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(formData).toString(),
+        }
+      );
 
       if (response.status === 200) {
-        setIsSuccess(true); // Set success state if the response is successful
+        setIsSuccess(true);
         setIsError(false);
       } else {
-        setIsError(true); // Set error state if response is not 200
+        setIsError(true);
         setIsSuccess(false);
       }
     } catch (error) {
-      setIsError(true); // Set error state if an exception occurs
+      setIsError(true);
       setIsSuccess(false);
     }
   };
