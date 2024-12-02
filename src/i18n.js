@@ -122,6 +122,7 @@ i18n
             submit: {
               success: "The email was sent successfully",
               failure: "There was an error sending the email",
+              loading: "Sending email",
             },
           },
           footer: {
@@ -235,6 +236,7 @@ i18n
             submit: {
               success: "El correo se envió exitosamente",
               failure: "Hubó un error al enviar el correo",
+              loading: "Enviando correo",
             },
           },
           footer: {

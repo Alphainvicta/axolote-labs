@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import NavBar from "./sections/nav_bar/nav_bar.jsx";
 import MainScreen from "./sections/main_screen/main_screen.jsx";
 import LogosBar from "./sections/logos_bar/logos_bar";
-import Characteristics from "./sections/characteristics/characteristics";
+// import Characteristics from "./sections/characteristics/characteristics";
 import Services from "./sections/services/services";
 import Reviews from "./sections/reviews/reviews";
 import AboutUs from "./sections/about_us/about_us";

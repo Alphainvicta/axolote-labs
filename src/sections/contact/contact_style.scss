@@ -10,12 +10,6 @@
 
   &.submitted {
     justify-content: center;
-    .side_a {
-      display: none;
-    }
-    .side_b {
-      display: none;
-    }
   }
 
   &.success {
@@ -96,6 +90,25 @@
       margin: 0;
     }
   }
+  .side_loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-weight: 700;
+      font-size: 3.8rem;
+      line-height: 4.9rem;
+      margin: 0;
+    }
+
+    .logo_cont {
+      animation: loading_form 0.8s ease-in forwards infinite;
+      svg {
+        height: 20rem;
+        width: auto;
+      }
+    }
+  }
 }
 
 //
@@ -137,5 +150,18 @@
         width: 100%;
       }
     }
+  }
+}
+
+@keyframes loading_form {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }
