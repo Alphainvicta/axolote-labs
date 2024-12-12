@@ -28,7 +28,9 @@ export const Button_purple = styled(Button_base)`
     color: #7032d8;
 
     svg {
-      fill: #7032d8;
+      path {
+        stroke: #7032d8;
+      }
     }
   }
 `;
@@ -57,7 +59,9 @@ export const Button_pink = styled(Button_base)`
     color: #f2146f;
 
     svg {
-      fill: #f2146f;
+      path {
+        stroke: #f2146f;
+      }
     }
   }
 `;
