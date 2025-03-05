@@ -96,7 +96,11 @@ const Contact = () => {
     <div
       id="contact"
       className={`contact_container ${
-        isFormSubmitted ? `submitted ${isSuccess ? "success" : "error"}` : ""
+        isFormSubmitted
+          ? `submitted ${
+              isSuccess != null ? (isSuccess ? "success" : "error") : ""
+            }`
+          : ""
       }`}
     >
       {isFormSubmitted ? (
